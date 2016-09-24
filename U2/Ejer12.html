@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var fecha = new Date();
+      var dia = fecha.getDay();
+      switch (dia) {
+        case 1:
+            document.write("La fecha de hoy es "+fecha+"<br> Quedan "+(5-dia)+" dias para llegar al finde.Esto se pasa en nada");
+          break;
+        case 2:
+            document.write("La fecha de hoy es "+fecha+" Quedan "+(5-dia)+" dias para llegar al finde.Ademas hoy sales antes");
+          break;
+        case 3:
+            document.write("La fecha de hoy es "+fecha+" Quedan "+(5-dia)+" dias para llegar al finde.Venga que hoy hay champions");
+          break;
+        case 4:
+            document.write("La fecha de hoy es "+fecha+" Quedan "+(5-dia)+" dias para llegar al finde.Este es el dia mas duro pero piensa que mañana es viernes");
+          break;
+        case 5:
+            document.write("La fecha de hoy es "+fecha+"<br> Quedan "+(5-dia)+" dias para llegar al finde.Es viernes motherfuckers");
+          break;
+        default:
+          document.write("Lo siento este dia no existe o ya es fin de semana");
+      }
+    </script>
+  </body>
+</html>

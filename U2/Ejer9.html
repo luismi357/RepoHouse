@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejer8 UN2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var anyo= prompt("Dime tu año");
+      var d = new Date();
+      var n = d.getFullYear();
+      var calculo=n-anyo;
+      if(calculo<18){
+        alert("No puedes entrar en la pagina eres menor de edad");
+      }else{
+        document.write(calculo);
+      }
+    </script>
+
+  </body>
+</html>
