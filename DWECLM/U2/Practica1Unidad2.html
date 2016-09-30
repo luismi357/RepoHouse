@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practica 1 Unidad 2</title>
+  </head>
+  <body>
+  <h2> <p align="center">¿Quieres conocer nuestros surtido? Pulsa sobre la imagen</p></h2>
+    <center><img src="kiosco.png" onclick="mostrarSurtido()"></center>
+    </p>
+    <script type="text/javascript">
+
+
+    // function generaSurtido(){
+    //   var productos=["Revistas","Bonometros","Regalizes","Piruletas","Caramelos","Prensa","Cromos"];
+    //   return productos;
+    // }
+
+    function generaSurtido(){
+      var productos=["regaliz.png","piruleta.png","bono.png","revista.png","caramelos.png","cromos.png","prensa.png"];
+      return productos;
+    }
+
+    // function consultaPrecios(item){
+    //   var precio=["2€","7€","1€","1€","2€","3€","2€"];
+    //   return precio[item];
+    // }
+
+    function consultaPrecios(item){
+      var precio=["1€","1€","7€","2€","1,50€","2€","1,50€"];
+      return precio[item];
+    }
+
+
+    // function mostrarSurtido(){
+    //   var surtido=generaSurtido();
+    //   for(var i=0;i<surtido.length;i++){
+    //     document.write("<p>"+surtido[i]+"    "+consultaPrecios(i)+"</p><br>");
+    //   }
+    // }
+
+    function mostrarPrecio(){
+      var surtido=generaSurtido();
+      for(var i=0;i<surtido.length;i++){
+        document.write("<p>"+consultaPrecios(i)+"</p><br>");
+      }
+    }
+
+
+    function mostrarSurtido(){
+      var surtido=generaSurtido();
+      for(var i=0;i<surtido.length;i++){
+         document.write("<p onclick="+mostrarPrecio()+">"+"<img src="+surtido[i]+" width=100 height=100>"+"</p><br>");
+      }
+    }
+
+    </script>
+  </body>
+</html>

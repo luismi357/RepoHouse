@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejer13</title>
+  </head>
+  <body>
+    <h1>Funciones</h1>
+    <script type="text/javascript">
+      var nacimiento= prompt("Dime el año de nacimiento");
+      function calculaEdad(nacimiento){
+        var d = new Date();
+        var n = d.getFullYear();
+        return n-nacimiento;
+      }
+    document.write(calculaEdad(nacimiento));
+    </script>
+  </body>
+</html>
