@@ -10,30 +10,30 @@
     </p>
     <script type="text/javascript">
 
-
     function generaSurtido(){
-      var productos=["Revistas","Bonometros","Regalizes","Piruletas","Caramelos","Prensa","Cromos"];
+      var productos=["regaliz.png","piruleta.png","bono.png","revista.png","caramelos.png","cromos.png","prensa.png"];
       return productos;
     }
 
 
-
     function consultaPrecios(item){
-      var precio=["2€","7€","1€","1€","2€","3€","2€"];
+      var precio=["1€","1€","7€","2€","1,50€","2€","1,50€"];
       return precio[item];
     }
-
-
+     function mostrarPrecio(){
+       var mPrecio= consultaPrecios(item);
+       for(var i=0;i<mPrecio.length;i++){
+       document.write("<p>"+consultaPrecios(item)+"</p>");
+      }
+     }
 
 
     function mostrarSurtido(){
       var surtido=generaSurtido();
       for(var i=0;i<surtido.length;i++){
-         document.write("<p>"+surtido[i]+consultaPrecios(i)+"</p><br>");
+         document.write("<img width=100 height=100 src="+surtido[i]+"onclick= "+mostrarSurtido()+">");
       }
     }
-
-
 
     </script>
   </body>
