@@ -27,11 +27,23 @@
       }
      }
 
+     function mostrarSurtidoPrecio(){
+       var surtido=generaSurtido();
+       for(var i=0;i<surtido.length;i++){
+          document.write("<img width=100 height=100 src= "+surtido[i]+"/><p>"+mostrarPrecio(i)+"</p>");
+       }
+     }
+     function nombre(indice){
+       var prec=consultaPrecios(indice);
+       var surtido=generaSurtido();
+       document.body.innerHTML = "<img width=100 height=100 src= "+surtido[indice]+" onclick=\"mostrarSurtidoPrecio()\"/>" + prec;
+     }
+
 
     function mostrarSurtido(){
       var surtido=generaSurtido();
       for(var i=0;i<surtido.length;i++){
-         document.write("<img width=100 height=100 src="+surtido[i]+"onclick= "+mostrarSurtido()+">");
+         document.write("<img width=100 height=100 src= "+surtido[i]+" onclick=\"nombre(" + i + ")\"/>");
       }
     }
 
