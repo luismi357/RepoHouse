@@ -1,0 +1,40 @@
+body{
+  background-image: url("fondo.jpg");
+}
+h1{
+  background-image: url("fondoH1.jpg");
+  background-repeat: repeat-x;
+  color:#FFFFFF;
+  border: 2px solid;
+  border-color:#FFFFFF;
+}
+
+a {
+  margin: 1em 0;
+  float: left;
+  clear: left;
+}
+
+.pdf{
+color: #E37529;
+padding: 0 0 0 22px;
+background: #FFF url(img/pdf.png) no-repeat left center;
+background-size:18px 18px;
+}
+.boton{
+  font-family: Arial;
+  color:#000000;
+  font-size:20px;
+  padding-top:10px ;
+  padding-right:20px ;
+  padding-bottom:10px ;
+  padding-left:20px ;
+  border-radius: 28px;
+  background-color:#3498db;
+}
+.boton:hover{
+  background-color:#00FFFF;
+}
+.boton:active{
+  background-color:#FFFF00;
+}

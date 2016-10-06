@@ -1,0 +1,22 @@
+img{
+  float:left;
+  margin-left:30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+}
+#paginacion{
+  border: 1px solid;
+  padding:10px;
+  background-color: grey;
+}
+.izquierda{
+  float:left;
+}
+.derecha{
+  float:right;
+}
+.clear{
+  clear:both;
+}
