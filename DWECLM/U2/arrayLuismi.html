@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Array</title>
+    <link rel="stylesheet" href="estiloArray.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+    // Creamos los array:
+    var paciente = ["Pepe", "Juan", "Adolfo"];
+    var nExp = ["001","002","003"];
+    var edad = [45,29,46];
+    var nTelf = ["666444333","663445778","123456789"];
+
+    // Se muestra el array
+    // for (var i in paciente) {
+    //   document.write (paciente[i] + ", ");
+    // }
+
+    // Se añaden nuevos elementos al final del array
+    // var nPac = paciente.push("Maria", "Pepa");
+    // var newExp=nExp.push("004","005");
+    // var nEdad=edad.push(36,19);
+    // var newTelf=nTelf.push("665447845","625479845");
+
+
+    // Se muestra el array
+    // for (var i in paciente) {
+    //   document.write (paciente[i] + ", ");
+    // }
+
+    // // Se busca en índice del array por el nombre del elemento
+    // var x = paciente.indexOf("001");
+
+    // // Se muetra el nº del índice antes buscado
+    // document.write(x);
+
+    //Se borra el dato de ese índice
+    // var delPac = paciente.splice(1, 1);
+    // var delExp = nExp.splice(1,1);
+    // var delEdad = edad.splice(1,1);
+    // var delTlef = nTelf.splice(1,1);
+
+    // Se muestra el array
+    // for (var i in paciente) {
+    //   document.write (paciente[i] + ", ");
+    // }
+
+    // Inicializa a 0 el elemento indicado
+    delete paciente [0];
+
+    // Se muestra el array
+    function muestraPacientes(){
+    for (var i in paciente) {
+      return paciente;
+      }
+    }
+
+    function muestranExp(){
+    for (var i in nExp) {
+      return nExp;
+      }
+    }
+
+    function muestraedad(){
+    for (var i in edad) {
+      return edad;
+      }
+    }
+
+    function muestranTelf(){
+    for (var i in nTelf) {
+      return nTelf;
+      }
+    }
+    </script>
+
+    <center><table class="tds2"></center>
+      <center><caption class="titulo">PACIENTES MEDICINA INTERNA</caption></center>
+      <script type="text/javascript">
+        for(var i=0;i<20;i++){
+          document.write("<br>");
+        }
+      </script>
+        <tr>
+          <td >
+            Nombre
+          </td>
+          <td class="tds">
+            <script type="text/javascript">
+              document.write(muestraPacientes());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td >
+            Numero Exp
+          </td>
+          <td class="tds">
+            <script type="text/javascript">
+              document.write(muestranExp());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td >
+            Edad
+          </td>
+          <td class="tds">
+            <script type="text/javascript">
+              document.write(muestraedad());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td >
+            Telefono
+          </td>
+          <td class="tds">
+            <script type="text/javascript">
+              document.write(muestranTelf());
+            </script>
+          </td>
+        </tr>
+        <!-- <tr>
+          <td>Indice Buscado</td>
+          <td class="tds">
+            <script type="text/javascript">
+              document.write(x);
+            </script>
+          </td>
+        </tr> -->
+    </table>
+  </body>
+</html>

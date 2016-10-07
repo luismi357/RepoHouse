@@ -1,0 +1,20 @@
+.tds{
+  border-color: black;
+  border:1px solid;
+  background-color: orange;
+  font-size: 19px;
+}
+.tds2{
+  font-size: 19px;
+}
+.titulo{
+  font-size: 30px;
+  padding: 3px;
+}
+body{
+  background-image: url("hospital.jpg");
+  background-size: cover;
+}
+table{
+
+}
