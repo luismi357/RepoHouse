@@ -1,0 +1,30 @@
+input{
+  border-radius: 5px;
+  display: inline-block;
+
+}
+input.checkbox{
+  margin-bottom: 10px;
+}
+input:focus{
+  border-color:#DA70D6;
+  background-color: grey;
+}
+.motInsc{
+  height: 40px;
+}
+.nota{
+  border:0.5px solid;
+  border-style: dashed;
+  font-size:12px;
+  font-style: italic;
+}
+label{
+  float:left;
+  height: 30px;
+}
+
+/*autofocus{
+  border: 5px solid;
+  border-color: purple;
+}*/
