@@ -11,33 +11,34 @@
       <legend>Inscripcion</legend>
       <fieldset>
         <legend>Informacion Personal</legend>
-        <div><label for="name">Nombre*:<input type="text" name="name" id="name" autofocus required placeholder="Escribe tu nombre..."></label><br><br></div>
-        <div><label for="apell">Apellidos*:<input type="text" name="apell" id="apell" required placeholder="Escribe tus apellidos..."></label><br><br></div>
-        <div><label for="mail">Email*:<input type="email" name="mail" id="mail" required placeholder="Escribe tu email..."></label><br><br></div>
-        <div>Sexo:<input type="radio" name="sexo" value="hombre" checked>Hombre
-          <input type="radio" name="sexo" value="mujer">Mujer<br><br></div>
-          <div>Fecha Nacimiento*: <input type="date" name="date" required><br><br></div>
-          <div>Provincia:<select name="prov">
+        <div><label for="name" >Nombre*:</label><input type="text" name="name" id="name" autofocus required placeholder="Escribe tu nombre..."><br><br></div>
+        <div><label for="apell" >Apellidos*:</label><input type="text" name="apell" id="apell" required placeholder="Escribe tus apellidos..."><br><br></div>
+        <div><label for="mail">Email*:</label><input type="email" name="mail" id="mail" required placeholder="Escribe tu email..."><br><br></div>
+
+        <div><label for="sex">Sexo:</label><input type="radio" name="sexo" value="hombre" id="hombre" checked><label for"hombre">Hombre</label>
+          <input type="radio" name="sexo" value="mujer" id="mujer"><label for="mujer">Mujer</label><br><br></div>
+
+          <div><label for="fech">Fecha Nacimiento*: </label><input type="date" name="date" required><br><br></div>
+          <div><label for="provin">Provincia:</label><select name="prov">
             <option>Castellon</option>
             <option>Valencia</option>
             <option>Alicante</option>
           </select><br><br></div>
-          <div> <label for="telf">Telefono:<input type="text" name="telf" id="telf" placeholder="Escribe tu telefono..."></label><br><br></div>
-          <div class"motInsc"> <label for="motInsc">Motivo Inscripcion:<br><textarea cols="100" id="motInsc" placeholder="Escribe tu motivo de Inscripción..."></textarea></label><br><br><br></div>
-          <div>Escoge el color de tu avatar:<input type="color"></div>
+          <div> <label for="telf">Telefono:</label><input type="text" name="telf" id="telf" placeholder="Escribe tu telefono..."><br><br></div>
+          <div class"motInsc"> <label for="motInsc" >Motivo Inscripcion:</label><br><textarea cols="100" id="motInsc" placeholder="Escribe tu motivo de Inscripción..."></textarea><br><br><br></div>
+          <div><label for="color">Escoge el color de tu avatar:</div><input type="color"></label>
         </fieldset>
         <fieldset>
           <legend>Creacion de Usuario</legend><br>
-          <div><label for="nomUsu">Nombre de Usuario*:<input type="text" name="nomUsu" id="nomUsu" required placeholder="Escribe tu nombre de usuario..."></label><br><br></div>
-          <div><label for="contra">Contraseña*:<input type="password" name="contra" id="contra" required maxlength="8"/ placeholder="Escribe tu contraseña..."></label><br><br></div>
-          <div><label for="contra2">Repite Contraseña*:<input type="password" name="contra2" id="contra2" required maxlength="8"/ placeholder="Escribe tu contraseña de nuevo..."> </label><br><br></div>
+          <div><label for="nomUsu" >Nombre de Usuario*:</label><input type="text" name="nomUsu" id="nomUsu" required placeholder="Escribe tu nombre de usuario..."><br><br></div>
+          <div><label for="contra" >Contraseña*:</label><input type="password" name="contra" id="contra" required maxlength="8"/ size="10" placeholder="Escribe tu contraseña..."><br><br></div>
+          <div><label for="contra2">Repite Contraseña*:</label><input type="password" name="contra2" id="contra2" required maxlength="8"/ size="10" placeholder="Escribe tu contraseña de nuevo..."><br><br></div>
         </fieldset>
-        <input type="checkbox" name="foro">Deseo recibir copias de los mensajes del foro en mi correo electronico<br>
-        <input type="checkbox" name="eventos">Deseo recibir copias de proximos eventos en un correo electronico<br>
-        <input type="submit" value="Confirmar Registro"><br><br>
-        <div class="nota"><p>Nota:los campos marcados con * son obligatorios</p>
-      </fieldset>
-
-    </form>
-  </body>
-  </html>
+        <input type="checkbox" name="foro"><label for="foro">Deseo recibir copias de los mensajes del foro en mi correo electronico<br>
+          <input type="checkbox" name="eventos">Deseo recibir copias de proximos eventos en un correo electronico<br>
+          <input type="submit" value="Confirmar Registro"><br><br>
+          <div class="nota"><p>Nota:los campos marcados con * son obligatorios</p>
+          </fieldset>
+        </form>
+      </body>
+      </html>

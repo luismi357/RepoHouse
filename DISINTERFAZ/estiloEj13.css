@@ -1,0 +1,21 @@
+li{
+  list-style: none;
+  padding: 6px;
+  border:1px solid;
+  border-color: black;
+  width: 180px;
+}
+ li:hover{
+  background-color: grey;
+  color:green;
+  display: block;
+}
+.oculto{
+  display: none;
+}
+
+
+/*navOculto.li:hover{
+  visibility: visible;
+  display: list-item;
+}*/

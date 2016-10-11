@@ -1,3 +1,6 @@
+h1{
+  display: block;
+}
 img{
   float:left;
   margin-left:30px;
@@ -11,12 +14,12 @@ img{
   padding:10px;
   background-color: grey;
 }
+.clear{
+  clear:both;
+}
 .izquierda{
   float:left;
 }
 .derecha{
   float:right;
-}
-.clear{
-  clear:both;
 }

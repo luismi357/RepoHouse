@@ -1,7 +1,5 @@
-input{
+input,textarea{
   border-radius: 5px;
-  display: inline-block;
-
 }
 input.checkbox{
   margin-bottom: 10px;
@@ -19,12 +17,7 @@ input:focus{
   font-size:12px;
   font-style: italic;
 }
-label{
-  float:left;
-  height: 30px;
+div label:nth-child(1){
+  width:15%;
+  float: left;
 }
-
-/*autofocus{
-  border: 5px solid;
-  border-color: purple;
-}*/
